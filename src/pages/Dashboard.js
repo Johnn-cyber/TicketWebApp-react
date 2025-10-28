@@ -39,7 +39,7 @@ export default function Dashboard() {
             </p>
           </div>
           <div className="mt-4 md:mt-0">
-            <Link to="/tickets/new" className="btn-primary">
+            <Link to="/tickets" className="btn-primary">
               Create New Ticket
             </Link>
           </div>
@@ -102,4 +102,5 @@ const recentActivity = [
     status: 'closed',
     time: '2 hours ago',
   },
+
 ];
