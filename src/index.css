@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #4F46E5;
+  --color-secondary: #6366F1;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-gray: #6B7280;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800 bg-gray-50;
+  }
+}
+
+@layer components {
+  .container-max {
+    @apply max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 font-medium text-primary-700 bg-primary-50 rounded-lg hover:bg-primary-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors;
+  }
+
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  }
+
+  .status-tag {
+    @apply px-2 py-1 text-sm font-medium rounded-full;
+  }
+
+  .status-tag-open {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .status-tag-in-progress {
+    @apply bg-amber-100 text-amber-800;
+  }
+
+  .status-tag-closed {
+    @apply bg-gray-100 text-gray-800;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm p-6;
+  }
+}
